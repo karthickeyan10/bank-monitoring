@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bank Monitor</title>
+	<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+	<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script>pyodide.loadPackage("NumPy")</script> 
+	<style>
+		body {
+			background-color: lightblack;
+		}
+
+		.button-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+
+		.btn {
+			font-size: 36px;
+			padding: 30px 60px;
+			margin: 0 20px;
+			border-radius: 10px;
+			background-color: #4CAF50;
+			color: white;
+			transition: all 0.3s ease;
+			cursor: pointer;
+		}
+
+		.btn:hover {
+			transform: scale(1.1);
+		}
+		body {
+  background-color: #222;
+}
+h1 {
+			color: #fff;
+			text-align: center;
+			font-size: 3em;
+			margin-top: 50px;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- <h1>BANK MONITOR</h1>
+	<div class="container">
+		<div class="row justify-content-center align-items-center button-container">
+			<div class="col-md-4 text-center">
+				<a href="page1.html">
+					<button class="btn btn-lg">Feedback</button>
+
+				</a>
+			</div>
+			<div class="col-md-4 text-center">
+				<a href="page2.html">
+					<button class="btn btn-lg">Count</button>
+				</a>
+			</div>
+			<div class="col-md-4 text-center">
+				<a href="page3.html">
+					<button class="btn btn-lg">Tampering</button>
+				</a>
+			</div>
+		</div>
+	</div> -->
+	<py-script src="camtap.py">
+
+	</py-script>
+
+</body>
+</html>
